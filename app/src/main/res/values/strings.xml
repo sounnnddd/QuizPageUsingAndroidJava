@@ -1,0 +1,44 @@
+<resources>
+    <string name="app_name">ReverbSchool</string>
+    <string name="reverb_school">Reverb School</string>
+    <string name="reverb">Reverb</string>
+    <string name="school">School</string>
+    <string name="regisForm">Registration Form for Quiz</string>
+    <string name="first_name">First Name : </string>
+    <string name="second_name">Second Name : </string>
+    <string name="textClass">Class :</string>
+    <string name="text_section">Section :</string>
+    <string name="text_rno">Roll No :</string>
+    <string name="text_sex">Sex :</string>
+    <string name="female">Female</string>
+    <string name="male">Male</string>
+    <string name="dob">DOB :</string>
+    <string name="submit">Submit</string>
+    <string name="btn_next_page">Next page</string>
+    <string name="text_btn_dob">Click here to select your DOB</string>
+    <string name="other">Other</string>
+    <string name="log_in">Login</string>
+    <string name="text_username">Username :</string>
+    <string name="text_password">Password :</string>
+    <string name="txt_signIn">Click here to Sign In</string>
+    <string name="usernameHint">Should start with alphabet..use @school.com</string>
+    <string name="passwordHint">Atleast one upper and lower case letter,one special symbol and one digit</string>
+    <string name="ageInText">Age</string>
+    <string name="quizHead">Quiz on html</string>
+    <string name="qs1">1.What does HTML stand for?</string>
+    <string name="qs1_radBtn1">Home Tool Markup Language</string>
+    <string name="qs1_radBtn2">Hyper Text Markup Language</string>
+    <string name="qs1_radBtn3">Hyperlinks and Text Markup Language</string>
+    <string name="qs2">2.HTML is what type of language?</string>
+    <string name="qs2_radBtn1">Scripting Language</string>
+    <string name="qs2_radBtn2">Programming Language</string>
+    <string name="qs2_radBtn3">Markup Language</string>
+    <string name="qs3">3.The following are used in HTML(multiple answers are allowed)</string>
+    <string name="qs3_checkBx1">Multimedia</string>
+    <string name="qs3_checkBx2">Creating and working with class</string>
+    <string name="qs3_checkBx3">Forms</string>
+    <string name="quizEndStatement">End of the quiz. Click on the submit button to get your score on the total number of questions available</string>
+    <string name="qs4">4.Tags and test that are not directly displayed on the page are written in which section.</string>
+    <string name="scoreText">Your score</string>
+
+</resources>

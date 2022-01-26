@@ -1,0 +1,264 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/ivory"
+    xmlns:android="http://schemas.android.com/apk/res/android" >
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/ivory">
+
+    <TextView
+        android:id="@+id/reverbTop"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:text="@string/reverb"
+        android:textAllCaps="true"
+        android:textColor="@color/purple"
+        android:textColorHighlight="@color/redviolet"
+        android:textSize="32dp"
+        android:textStyle="bold" />
+
+
+    <ImageView
+        android:id="@+id/skl_emblem"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="0dp"
+        android:src="@drawable/schoologo" />
+
+    <TextView
+        android:id="@+id/schoolTop"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentRight="true"
+        android:text="@string/school"
+        android:textAllCaps="true"
+        android:textColor="@color/purple"
+        android:textColorHighlight="@color/redviolet"
+        android:textSize="32dp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/regText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/skl_emblem"
+        android:text="@string/regisForm"
+        android:textColor="@color/redviolet"
+        android:textSize="20dp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/text_fname"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/regText"
+        android:layout_marginTop="20dp"
+        android:text="@string/first_name"
+        android:textColor="@color/dark_red" />
+
+    <EditText
+        android:id="@+id/edit_fname"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/regText"
+        android:layout_marginTop="20dp"
+        android:layout_toRightOf="@+id/text_fname" />
+
+    <TextView
+        android:id="@+id/text_sname"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/edit_fname"
+        android:layout_marginTop="20dp"
+        android:text="@string/second_name"
+        android:textColor="@color/dark_red" />
+
+    <EditText
+        android:id="@+id/edit_sname"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/edit_fname"
+        android:layout_marginTop="20dp"
+        android:layout_toRightOf="@+id/text_sname" />
+
+    <TextView
+        android:id="@+id/text_class"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/edit_sname"
+        android:text="@string/textClass"
+        android:layout_marginTop="20dp"
+        android:textColor="@color/dark_red" />
+
+    <Spinner
+        android:id="@+id/spin_class"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/edit_sname"
+        android:layout_marginTop="20dp"
+        android:layout_toRightOf="@+id/text_class"></Spinner>
+
+    <TextView
+        android:id="@+id/text_section"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/spin_class"
+        android:layout_marginTop="20dp"
+        android:text="@string/text_section"
+        android:textColor="@color/dark_red" />
+
+    <Spinner
+        android:id="@+id/spin_section"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/spin_class"
+        android:layout_marginTop="20dp"
+        android:layout_toRightOf="@+id/text_section" />
+
+    <TextView
+        android:id="@+id/text_rno"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/spin_section"
+        android:text="@string/text_rno"
+        android:layout_marginTop="20dp"
+        android:textColor="@color/dark_red" />
+
+    <EditText
+        android:id="@+id/edit_rno"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/spin_section"
+        android:layout_marginTop="20dp"
+        android:layout_toRightOf="@+id/text_rno"
+        android:inputType="number" />
+
+    <TextView
+        android:id="@+id/text_sex"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/edit_rno"
+        android:layout_marginTop="20dp"
+        android:text="@string/text_sex"
+        android:textColor="@color/dark_red" />
+
+    <RadioGroup
+        android:id="@+id/radgrp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/edit_rno"
+        android:layout_marginTop="20dp"
+        android:layout_toRightOf="@+id/text_sex"
+        android:orientation="vertical">
+
+        <RadioButton
+            android:id="@+id/rad_female"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/female" />
+
+        <RadioButton
+            android:id="@+id/rad_male"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/male" />
+
+    </RadioGroup>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/radgrp"
+        android:layout_marginTop="20dp"
+        android:text="@string/text_username"
+        android:textColor="@color/dark_red"
+        android:id="@+id/text_username"/>
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/radgrp"
+        android:layout_marginTop="20dp"
+        android:layout_toRightOf="@+id/text_username"
+        android:textSize="10sp"
+        android:hint="@string/usernameHint"
+        android:id="@+id/second_uname"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/second_uname"
+        android:layout_marginTop="20dp"
+        android:text="@string/text_password"
+        android:textColor="@color/dark_red"
+        android:id="@+id/text_password"/>
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/second_uname"
+        android:layout_marginTop="20dp"
+        android:layout_toRightOf="@+id/text_password"
+        android:hint="@string/passwordHint"
+        android:textSize="8sp"
+        android:inputType="textPassword"
+        android:id="@+id/second_pwd"/>
+
+    <TextView
+        android:id="@+id/text_dob"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/second_pwd"
+        android:layout_marginTop="20dp"
+        android:text="@string/dob"
+        android:textColor="@color/dark_red" />
+    <TextView
+        android:id="@+id/text_dob_choose"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/second_pwd"
+        android:layout_marginTop="20dp"
+        android:layout_toRightOf="@+id/text_dob"
+        android:text="@string/dob"
+        android:textColor="@color/dark_red" />
+
+    <TextView
+        android:id="@+id/text_age"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/second_pwd"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="17dp"
+        android:layout_toRightOf="@+id/text_dob_choose"
+        android:text="@string/ageInText"
+        android:textColor="@color/dark_red" />
+    <Button
+        android:id="@+id/btn_date"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/second_pwd"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="99dp"
+        android:layout_toRightOf="@+id/text_dob"
+        android:text="@string/text_btn_dob" />
+
+    <Button
+        android:id="@+id/submit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/btn_date"
+        android:layout_marginTop="20dp"
+        android:text="SUBMIT"
+        android:textColor="@color/lavender"
+        android:background="@color/purple"/>
+
+
+
+
+
+</RelativeLayout>
+</ScrollView>
